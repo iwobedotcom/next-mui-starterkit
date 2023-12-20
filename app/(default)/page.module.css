@@ -1,0 +1,16 @@
+.main {
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.navLink {
+  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.activeNavLink {
+  color: blue
+}
