@@ -4,7 +4,8 @@
 }
 
 .navLink {
-  color: green;
+  color: inherit;
+  font-size: large;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,5 +13,5 @@
 }
 
 .activeNavLink {
-  color: blue
+  color: green
 }
