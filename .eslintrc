@@ -85,6 +85,7 @@
     "no-restricted-exports": 0,
     "react/no-children-prop": 0,
     "import/extensions": ["error", "ignorePackages", { "ts": "never", "tsx": "never" }],
+    "linebreak-style": ["error", "windows"],
     "react/forbid-prop-types": 0,
     "react/react-in-jsx-scope": 0,
     "jsx-a11y/anchor-is-valid": 0,
