@@ -1,8 +1,6 @@
 import React from "react";
-import "./loader.css";
 import { Box } from "@mui/material";
-import Link from "next/link";
-import Image from "next/image";
+import "./loader.css";
 
 function Loader() {
   return (
@@ -14,12 +12,9 @@ function Loader() {
         height: "100vh",
       }}
     >
-      <Link href="#">
-        <Box component="span">
-          <Image src="/next.svg" alt="nextjs" width={100} height={30} />
-        </Box>
-        <Box className="liquid" />
-      </Link>
+      <Box component="span">
+        <img src="/next.svg" alt="nextjs" />
+      </Box>
     </Box>
   );
 }
