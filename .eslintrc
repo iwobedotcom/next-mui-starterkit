@@ -46,7 +46,7 @@
     "plugin:@typescript-eslint/recommended",
     "next/core-web-vitals"
   ],
-  "plugins": ["unused-imports", "@typescript-eslint", "prettier"],
+  "plugins": ["unused-imports", "@typescript-eslint", "perfectionist", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -84,6 +84,7 @@
     "no-use-before-define": 0,
     "no-restricted-exports": 0,
     "react/no-children-prop": 0,
+    "import/extensions": ["error", "ignorePackages", { "ts": "never", "tsx": "never" }],
     "react/forbid-prop-types": 0,
     "react/react-in-jsx-scope": 0,
     "jsx-a11y/anchor-is-valid": 0,
@@ -179,7 +180,9 @@
             "custom-hooks": "hooks/**",
             "custom-utils": "utils/**",
             "custom-components": "components/**",
-            "custom-mock": "_mock/**"
+            "custom-mock": "_mock/**",
+            "builtin": "builtin",
+            "external": "external"
           }
         },
         "internal-pattern": ["./**", "!node_modules/**"]

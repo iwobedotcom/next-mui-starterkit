@@ -1,12 +1,18 @@
-import Navigation from "@/components/navigation";
-import styles from "./page.module.css";
-import Form from "@/components/form";
+import { Box, Typography } from '@mui/material';
 
-export default function Home() {
+export default function Home(): React.ReactElement {
   return (
-    <main className={styles.main}>
-      <h1>Home</h1>
-      <Form />
-    </main>
+    <Box
+      component="main"
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <Typography component="h1" sx={{ fontSize: '32px', fontWeight: 'bold' }}>
+        Cillum consectetur culpa labore amet ad est culpa.
+      </Typography>
+    </Box>
   );
 }
