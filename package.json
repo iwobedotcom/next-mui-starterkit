@@ -6,20 +6,29 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint \"./**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --fix \"./**/*.{ts,tsx}\"",
+    "prettier": "prettier --write \"./**/*.{ts,tsx}\"",
+    "rm:all": "rm -rf node_modules .next out dist build",
+    "re:start": "yarn rm:all && yarn install && yarn dev",
+    "re:build": "yarn rm:all && yarn install && yarn build"
   },
   "dependencies": {
+    "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@faker-js/faker": "^8.3.1",
     "@mui/material": "^5.15.1",
+    "@mui/utils": "^5.15.2",
     "date-fns": "^3.0.6",
     "next": "14.0.4",
+    "nprogress": "^0.2.0",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/nprogress": "^0.2.3",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^6.16.0",
