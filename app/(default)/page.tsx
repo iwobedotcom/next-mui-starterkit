@@ -7,10 +7,16 @@ export default function Home(): React.ReactElement {
       sx={{
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'center'
       }}
     >
-      <Typography component="h1" sx={{ fontSize: '32px', fontWeight: 'bold' }}>
+      <Typography
+        component="h1"
+        sx={{
+          fontSize: '32px',
+          fontWeight: 'bold'
+        }}
+      >
         Cillum consectetur culpa labore amet ad est culpa.
       </Typography>
     </Box>

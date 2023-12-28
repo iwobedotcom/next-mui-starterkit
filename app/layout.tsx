@@ -17,7 +17,7 @@ const inter = Inter({ subsets: ['latin'] });
 // ** Metadata
 export const metadata: Metadata = {
   title: _metadata.title,
-  description: _metadata.description,
+  description: _metadata.description
 };
 
 interface AppLayoutProps {

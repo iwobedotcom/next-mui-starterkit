@@ -25,7 +25,7 @@ const clientSideEmotionCache = createEmotionCache();
 
 export default function GlobalLayout({
   children,
-  emotionCache = clientSideEmotionCache,
+  emotionCache = clientSideEmotionCache
 }: GlobalLayoutProps): React.ReactElement {
   const pathname = usePathname();
   const searchParams = useSearchParams();

@@ -79,6 +79,7 @@
     "no-console": "warn",
     "no-param-reassign": 0,
     "naming-convention": 0,
+    "comma-dangle": ["error", "never"],
     "default-param-last": 0,
     "no-underscore-dangle": 0,
     "no-use-before-define": 0,

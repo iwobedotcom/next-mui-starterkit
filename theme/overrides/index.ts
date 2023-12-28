@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 // ** MUI Imports
 import { Theme } from '@mui/material/styles';
 
@@ -81,7 +82,7 @@ const Overrides = (theme: Theme) => {
     pagination,
     MuiTypography,
     dateTimePicker,
-    MuiToggleButton,
+    MuiToggleButton
   );
 };
 

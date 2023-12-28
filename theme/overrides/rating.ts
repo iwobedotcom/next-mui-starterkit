@@ -1,14 +1,14 @@
 // ** MUI Imports
-import { Theme } from '@mui/material/styles';
+import { Theme, SxProps } from '@mui/material/styles';
 
-const Rating = (theme: Theme) => ({
+const Rating = (theme: Theme): { MuiRating?: { styleOverrides?: SxProps<Theme> } } => ({
   MuiRating: {
     styleOverrides: {
       root: {
-        color: theme.palette.warning.main,
-      },
-    },
-  },
+        color: theme.palette.warning.main
+      }
+    }
+  }
 });
 
 export default Rating;
